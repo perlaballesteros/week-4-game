@@ -1,8 +1,69 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Baloo Thambi', cursive;
+	font-size: 20px;
+	color: #ffffff;
+	background-image: url("../images/blacksky.jpg")
 
+}
+header{
+	text-align: center;
+	margin:20px auto;
+	font-size: 60px;
+	font-family: "Bungee Shade", cursive;
+}
+
+#winslosses{
+	background-color: black;
+	padding:20px;
+	width:65%;
+	border:5px dotted #dda5c2;
+	margin:0 auto;
+	text-align: center;
+
+}
 #randnum{
+	float:left;
+	width:50%;
+	height: 90px;
+	
+	font-size: 90px;
+}
+#score{
+	float:right;
+	height: 90px;
+	width:50%;
 	
 }
+#winsShow,#lossesShow{
+	margin-top: 20px;
+	font-size:20px;
+}
+
 #purple,#pink,#colorful,#diamond{
-	width:100px;
-	height:100px;
+	clear:both;
+	width:150px;
+	height:150px;
+	
+}
+#instructions{
+	
+	line-height: 1.5;
+	font-size:15px;
+	margin-top:90px;
+	
+}
+h1,#totalscore{
+	font-size: 30px;
+
+}
+footer{
+	background-color: #000000;
+	margin:30px auto 0 auto;
+	padding:10px;
+	text-align: center;
+	position:relative;
+	bottom:0;
+	left:0;
 }

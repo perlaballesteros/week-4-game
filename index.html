@@ -1,3 +1,5 @@
+<!--PerlaB. 11/12/2017-->
+
 <!DOCTYPE html>
 <html>
 
@@ -17,7 +19,7 @@
 		<!--Linking to boostrap viewport-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!--GOOGLE FONTS-->
-
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Thambi|Bungee+Shade" rel="stylesheet">
 		<!--jQuery-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -26,49 +28,51 @@
 	<body>
 		
 		<header>Crystals Collector!</header>
-		<div id="instructions">
-			<p> You will be given a random number at the start of the game. 
-			<br>
-			There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
-			<br>
-			You win the game by matching your total score to random number, you loose the game if your total score goes above the random number. 
-			<br>
-			The value of each crystal is hidden from you until you click on it. 
-			<br>
-			Each time when the game starts, the game will change the values of each crystal. 
-			</p>
-
-		</div>
 
 		<div id="winslosses">
 
-			<h1 id="winsShow">Wins:</h1>
-			<h1 id="lossesShow">Losses:<h1>
+			<div id="randnum"></div>
+			
+			<div id="score">
+			<div id="winsShow">Wins:</div>
+			<div id="lossesShow">Losses:</div>
+			</div>
+			<div id="msg"></div>
 
-		</div>
+			<div id="images">
+				<img class= "imgs"id="pink" src="assets/images/pink.png">
+				<img class= "imgs"id="diamond" src="assets/images/diamond.png">
+				<img class= "imgs"id="purple" src="assets/images/purple.png">
+				<img class= "imgs"id="colorful" src="assets/images/colorful.png">
 
-		<div id="randnum">
+			</div>
+
+
+			<h1>Your Total Score:</h1>
+			<div id="totalscore"></div>
+			
+		
 		</div>
 
 		
-
-		<div id="images">
-			<img class= "imgs"id="pink" src="assets/images/pink.png">
-			<img class= "imgs"id="diamond" src="assets/images/diamond.png">
-			<img class= "imgs"id="purple" src="assets/images/purple.jpeg">
-			<img class= "imgs"id="colorful" src="assets/images/colorful.png">
-
-		</div>
-
-
-		<h1>Your total score is:</h1>
-		<div id="totalscore">
+		<div id="instructions">
+			<h4>How to Play:</h4>
+			<p>○ You will be given a random number at the start of the game. 
+			<br>
+			○ There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+			<br>
+			○ You win the game by matching your total score to random number, you loose the game if your total score goes above the random number. 
+			<br>
+			○ The value of each crystal is hidden from you until you click on it. 
+			<br>
+			○ Each time when the game starts, the game will change the values of each crystal. 
+			</p>
 
 		</div>
 
 		<!--linking to javascript>-->
 		<script type="text/javascript" src="assets/javascript/game.js"></script>
-		
+		<footer>Copyright © 2017 Perla Esmeralda Ballesteros </footer>
 
 	</body>
 
