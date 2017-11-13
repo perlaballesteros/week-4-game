@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>
+			Perla E. Ballesteros Hangman-Game
+		</title>
+
+		<!--reset css style to this html-->
+		<link rel="stylesheet"	type="text/css" href="assets/css/reset.css">
+
+		<!--Linking the css style to this html-->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+		<!--Linking to boostrap viewport-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--GOOGLE FONTS-->
+
+		<!--jQuery-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+		
+		<header>Crystals Collector!</header>
+		<div id="instructions">
+			<p> You will be given a random number at the start of the game. 
+			<br>
+			There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+			<br>
+			You win the game by matching your total score to random number, you loose the game if your total score goes above the random number. 
+			<br>
+			The value of each crystal is hidden from you until you click on it. 
+			<br>
+			Each time when the game starts, the game will change the values of each crystal. 
+			</p>
+
+		</div>
+
+		<div id="winslosses">
+
+			<h1 id="winsShow">Wins:</h1>
+			<h1 id="lossesShow">Losses:<h1>
+
+		</div>
+
+		<div id="randnum">
+		</div>
+
+		
+
+		<div id="images">
+			<img class= "imgs"id="pink" src="assets/images/pink.png">
+			<img class= "imgs"id="diamond" src="assets/images/diamond.png">
+			<img class= "imgs"id="purple" src="assets/images/purple.jpeg">
+			<img class= "imgs"id="colorful" src="assets/images/colorful.png">
+
+		</div>
+
+
+		<h1>Your total score is:</h1>
+		<div id="totalscore">
+
+		</div>
+
+		<!--linking to javascript>-->
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+		
+
+	</body>
+
+</html>
