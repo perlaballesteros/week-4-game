@@ -47,6 +47,10 @@ header{
 	height:150px;
 	
 }
+#msg{
+	color:#dda5c2;
+	font-family: "Bungee Shade", cursive;
+}
 #instructions{
 	
 	line-height: 1.5;

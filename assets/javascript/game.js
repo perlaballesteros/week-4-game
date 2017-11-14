@@ -26,12 +26,16 @@ function generateRandoms(){
 	diamond=Math.floor((Math.random()*12)+1);
 	purple=Math.floor((Math.random()*12)+1);
 	colorful=Math.floor((Math.random()*12)+1);
-	
-}	
 
+	
+}
+
+function blanks(){
+	$("#msg").text(" ");
+	$("#totalscore").text(" ");
+}
 
 //--------------------------------------
-
 
 
 $(".imgs").on ("click",function(){
@@ -39,6 +43,9 @@ $(".imgs").on ("click",function(){
 	var clicked=$(this).attr("id");
 
 	console.log("clicked: "+ clicked);
+	
+	blanks();
+
 
 	if(clicked==="pink")
 	{
@@ -67,23 +74,28 @@ $(".imgs").on ("click",function(){
 	}
 	if(totalScore===numGiven)
 	{
-		
 		wins++;
+		$("#msg").text("You Won!");
 		$("#winsShow").text("Wins: "+ wins);
+		blanks();
 		generateRandoms();
 		totalScore=0;
 		
-		$("#totalscore").text(" ");
 
 	}
 	if(totalScore>numGiven)
+
 	{
-		
 		losses++;
+		$("#msg").text("Keep Trying!");
 		$("#lossesShow").text("Losses: " +losses);
+
 		generateRandoms();
 		totalScore=0;
-		$("#totalscore").text(" ");
+		
+		
 	}
+
+
 
 });
